@@ -1,0 +1,63 @@
+$Sans-Narrow_bold: "Sans-Narrow_bold", "Verdana", sans-serif;
+$Sans-Narrow_regular: "Sans-Narrow_regular", "Verdana", sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background: #353535;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+
+  font-family: $Sans-Narrow_regular;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 120px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-family: $Sans-Narrow_bold;
+
+  color: #000000;
+  border: 1px solid #e5ddd5;
+  background: #f8f5f2;
+
+  transition: .6s;
+
+  &:hover {
+    border-color: #d5c9bd;
+
+    transition: .7s;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+

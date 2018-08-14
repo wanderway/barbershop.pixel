@@ -1,0 +1,15 @@
+@media (min-width: 320px) and (max-width: 768px) {
+
+  .page-header {
+    height: 85px;
+
+    background: #000000;
+
+    &__logo {
+      height: 85px;
+      padding-top: 27.5px;
+
+      text-align: center;
+    }
+  }
+}
