@@ -1,12 +1,98 @@
 $Sans-Narrow_bold: "Sans-Narrow_bold", "Verdana", sans-serif;
 
+.main-nav {
+  min-height: 70px;
+
+  background: #000000;
+
+  &__toggle {
+    display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  &__item--active {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 5px;
+      background: #826550;
+
+      content: "";
+    }
+  }
+
+  &__items {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  &__user-items {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    padding: 0 30px 0 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  &__item a {
+    display: block;
+    padding: 25px 0 23px 0;
+
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  &__user-login {
+    position: relative;
+
+    display: block;
+    padding: 25px 0 23px 0;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    &:before {
+      position: absolute;
+      left: -25px;
+      top: 29px;
+      width: 16px;
+      height: 16px;
+      background: url("../img/login.png");
+      content: "";
+    }
+  }
+}
+
+
 @media (min-width: 320px) and (max-width: 768px) {
   .main-nav {
     position: relative;
 
-    width: 320px;
+    width: auto;
     min-height: 50px;
-    margin: 0 auto;
+    margin: 0;
 
     background: #826550;
 
@@ -92,12 +178,18 @@ $Sans-Narrow_bold: "Sans-Narrow_bold", "Verdana", sans-serif;
       }
     }
 
+    &__wrapper {
+      flex-direction: column;
+    }
+
     &__items {
+      width: auto;
+      flex-direction: column;
+      justify-content: normal;
       padding: 0;
     }
 
     &__item a {
-      display: block;
       padding: 12px 21px 13px;
 
       font-size: 18px;
@@ -128,6 +220,8 @@ $Sans-Narrow_bold: "Sans-Narrow_bold", "Verdana", sans-serif;
     }
 
     &__user-items {
+      width: auto;
+      justify-content: left;
       padding: 0;
     }
     &__user-login {
@@ -140,18 +234,14 @@ $Sans-Narrow_bold: "Sans-Narrow_bold", "Verdana", sans-serif;
       line-height: 18px;
       color: #ffffff;
       text-decoration: none;
+      text-transform: none;
+      font-weight: normal;
 
       &:before {
-        position: absolute;
         top: 17px;
         left: 21px;
 
-        width: 16px;
-        height: 16px;
-
-        background: url("../img/login.png");
         opacity: 0.6;
-        content: "";
       }
     }
     &--closed .main-nav__item {
@@ -162,7 +252,7 @@ $Sans-Narrow_bold: "Sans-Narrow_bold", "Verdana", sans-serif;
       }
     }
 
-    &--closed  .main-nav__item--active a {
+    &--closed .main-nav__item--active a {
       padding-left: 120px;
       padding-right: 120px;
 
@@ -226,4 +316,5 @@ $Sans-Narrow_bold: "Sans-Narrow_bold", "Verdana", sans-serif;
     }
   }
 }
+
 

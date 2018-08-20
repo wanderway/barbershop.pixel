@@ -1,15 +1,38 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    display: flex;
+    height: 650px;
+    order: 2;
+
+    background: #000000 url("../img/back-desktop.png");
+
+    & img {
+      height: 30px;
+      margin: 110px auto 0;
+    }
+  }
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
 
   .page-header {
+    display: block;
     height: 85px;
 
-    background: #000000;
+    background: none;
 
     &__logo {
       height: 85px;
       padding-top: 27.5px;
+      order: 1;
+      justify-content: center;
 
-      text-align: center;
+      & img {
+        margin: 0;
+      }
     }
   }
 }
