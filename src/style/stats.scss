@@ -14,7 +14,7 @@
     flex-direction: column;
     width: calc(100% / 3);
     min-height: 320px;
-    padding: 30px 5% 35px 40px;
+    padding: 30px 0 35px 40px;
 
     background: #ffffff;
     color: #000000;
@@ -41,6 +41,7 @@
 
   &__intro {
     margin: 50px 0 0 0;
+    padding-right: 20%;
     line-height: 27px;
   }
 
@@ -50,6 +51,10 @@
     margin-top: auto;
 
     font-size: 20px;
+  }
+
+  &__legend--bottom {
+    display: none;
   }
 
   &__items {
@@ -68,7 +73,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 30px 0 35px 30px;
+    padding: 30px 0 30px 30px;
 
     &:first-child {
       background: #404040;
@@ -112,12 +117,105 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .stats {
-    display: none;
+    margin-top: -185px;
+
+    flex-direction: column;
+    &__header {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: 185px;
+      padding-bottom: 20px;
+    }
+
+    &__slogan {
+      width: 50%;
+    }
+
+    &__intro {
+      width: 33%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__items {
+      width: auto;
+    }
+
+    &__field {
+      margin-top: 15px;
+    }
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .stats {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    background: #242424;
+
+    &__header {
+      width: auto;
+      padding: 30px;
+      text-align: center;
+      min-height: auto;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &__intro {
+      padding: 0;
+      margin-top: 25px;
+    }
+
+    &__items {
+      width: auto;
+
+      tr {
+        width: 100%;
+        padding: 25px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    &__field {
+      margin: 0;
+      font-size: 18px;
+      line-height: 18px;
+      text-align: right;
+
+      br {
+        display: block;
+      }
+    }
+
+    &__slogan {
+      font-size: 30px;
+      line-height: 30px;
+      text-transform: uppercase;
+      font-family: $Sans-Narrow_bold;
+    }
+
+    &__legend--top {
+      display: none;
+    }
+
+    &__legend--bottom {
+      display: block;
+      text-align: center;
+      padding: 20px 0 20px 0;
+
+    }
+
+    &__value {
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 }
