@@ -12,9 +12,10 @@ $Sans-Narrow_regular: "Sans-Narrow_regular", "Verdana", sans-serif;
 }
 
 body {
+  max-width: 1200px;
   background: #000000;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-size: 0;
 
   font-family: $Sans-Narrow_regular;

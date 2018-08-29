@@ -2,19 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Любимый Mishka</title>
+    <title>Барбершоп pixel</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
     <meta name="viewport" content="width=device-width">
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header">
       <h1 class="visually-hidden  closed">Барбершоп «Бородинский» - истинно мужская классика</h1>
       <div class="page-header__logo">
         <img src="img/logotype-mobile.png" alt="Барбершоп «Бородинский»">
       </div>
 
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs  container">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
 
         <div class="main-nav__wrapper">
@@ -33,6 +33,34 @@
         </div>
       </nav>
     </header>
+    <div class="stats  container">
+
+      <header class="stats__header">
+        <h2 class="stats__title  visually-hidden">Статистика барбершопа</h2>
+        <b class="stats__slogan">Стрижка у нас<br> это выгодно!</b>
+        <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+        <small class="stats__legend stats__legend--top"><sup>*</sup> - приведеннные данные ложь</small>
+      </header>
+
+       <table class="stats__items">
+         <tr>
+           <td class="stats__value">1 500 <sup>*</sup></td>
+           <td class="stats__field">рублей<br> вложений</td>
+         </tr>
+         <tr>
+           <td class="stats__value">7 200</td>
+           <td class="stats__field">секунд<br> времени мастера</td>
+         </tr>
+         <tr>
+           <td class="stats__value">90 000</td>
+           <td class="stats__field">постриженных<br> волос</td>
+         </tr>
+         <tr>
+           <td class="stats__value">500 000 <sup>*</sup></td>
+           <td class="stats__field">лайков<br> и комплиментов</td>
+         </tr>
+       </table>
+    </div>
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
