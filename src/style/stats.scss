@@ -1,11 +1,16 @@
 .stats {
 
-  display: flex;
   margin-top: -159px;
 
-  font-family: $Sans-Narrow_regular;
+  @include regular;
   font-size: 20px;
+
   color: #ffffff;
+  background: #242424;
+
+  &__wrapper {
+    display: flex;
+  }
 
   &__header {
     position: relative;
@@ -119,7 +124,10 @@
   .stats {
     margin-top: -185px;
 
-    flex-direction: column;
+    &__wrapper {
+      flex-direction: column;
+    }
+
     &__header {
       display: flex;
       width: 100%;
@@ -151,11 +159,13 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
   .stats {
-    display: flex;
-    flex-direction: column;
     margin: 0;
 
     background: #242424;
+
+    &__wrapper {
+      flex-direction: column;
+    }
 
     &__header {
       width: auto;
