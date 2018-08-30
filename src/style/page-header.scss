@@ -10,8 +10,8 @@
     background: #000000 url("../img/back-desktop.png");
 
     & img {
-      height: 30px;
-      margin: 110px auto 0;
+      margin: 110px auto auto;
+      height: auto;
     }
   }
 }
@@ -25,12 +25,12 @@
 
     &__logo {
       height: 85px;
-      padding-top: 27.5px;
       order: 1;
       justify-content: center;
 
       & img {
-        margin: 0;
+        width: auto;
+        margin: auto;
       }
     }
   }
