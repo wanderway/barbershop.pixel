@@ -1,0 +1,143 @@
+.news {
+  padding: 65px 0 0 0;
+
+  background: #f8f5f2;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0 0 0 70px;
+
+    font-family: $Sans-Narrow_bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+
+  &__items {
+    display: flex;
+    padding: 65px 0 45px 0;
+
+    font-family: $Sans-Narrow_regular;
+
+    border-bottom: 1px solid #e5ddd5;
+  }
+
+  &__item {
+    display: flex;
+    width: calc(100% / 3);
+  }
+
+  &__date-wrapper {
+    position: relative;
+
+    margin: 0 5%;
+
+    line-height: 30px;
+    text-align: center;
+    width: 50px;
+    height: 60px;
+    padding: 7px 0 0 0;
+
+    color: #ffffff;
+    background: #000000;
+
+    &:after {
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+
+      width: 2px;
+      height: 10px;
+
+      border-top: 10px solid #000000;
+      border-left: 24px solid transparent;
+      border-right: 24px solid transparent;
+
+      content: "";
+    }
+  }
+
+  &__date {
+    font-size: 30px;
+  }
+
+  &__month {
+    line-height: 16px;
+    font-size: 16px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 27px;
+    width: 75%;
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 15%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .news {
+
+    &__item {
+      width: 50%;
+
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+
+    &__button {
+      width: 25%;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+  .news {
+
+    &__items {
+      height: auto;
+      padding: 30px 0 130px 0;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__title {
+      padding: 0;
+
+      font-size: 30px;
+      text-align: center;
+    }
+
+    &__item {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 20px;
+      }
+
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+
+    &__button {
+      top: 80%;
+
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
+}

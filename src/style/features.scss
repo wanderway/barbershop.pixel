@@ -104,7 +104,7 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
   .features {
-    padding: 20px 0 30px 0;
+    padding: 20px 0 40px 0;
     display: block;
 
     &__wrapper {
@@ -142,7 +142,7 @@
 
       border: 1px solid #ffffff;
       transform: rotate(45deg);
-      
+
       &:first-child {
         margin-left: 0;
       }

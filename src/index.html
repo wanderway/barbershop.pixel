@@ -1,105 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Барбершоп pixel</title>
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="viewport" content="width=device-width">
-</head>
-<body>
-<header class="page-header">
-  <h1 class="visually-hidden  closed">Барбершоп «Бородинский» - истинно мужская классика</h1>
-  <picture class="page-header__logo">
-    <source media="(min-width: 320px) and (max-width: 768px)" srcset="img/logotype-mobile.svg">
-    <source media="(min-width: 768px) and (max-width: 1024px)" srcset="img/logotype-tablet.svg">
-    <img src="img/logotype-desktop.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
-  </picture>
+  <head>
+    <meta charset="UTF-8">
+    <title>Барбершоп pixel</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+  <header class="page-header">
+    <h1 class="visually-hidden  closed">Барбершоп «Бородинский» - истинно мужская классика</h1>
+    <picture class="page-header__logo">
+      <source media="(min-width: 320px) and (max-width: 768px)" srcset="img/logotype-mobile.svg">
+      <source media="(min-width: 768px) and (max-width: 1024px)" srcset="img/logotype-tablet.svg">
+      <img src="img/logotype-desktop.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+    </picture>
 
-  <nav class="main-nav  main-nav--closed  main-nav--nojs  container">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs  container">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
 
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__items">
-        <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-        <li class="main-nav__item"><a href="#">Наши работы</a></li>
-        <li class="main-nav__item"><a href="#">Записаться</a></li>
-        <li class="main-nav__item"><a href="#">Контакты</a></li>
-        <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="#">Наши работы</a></li>
+          <li class="main-nav__item"><a href="#">Записаться</a></li>
+          <li class="main-nav__item"><a href="#">Контакты</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
 
-      <ul class="main-nav__user-items">
-        <li class="main-nav__user-item">
-          <a href="#" class="main-nav__user-login" title="Войти">Вход</a></li>
-      </ul>
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item">
+            <a href="#" class="main-nav__user-login" title="Войти">Вход</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="stats">
+    <div class="stats__wrapper  container">
+      <header class="stats__header">
+        <h2 class="stats__title  visually-hidden">Статистика барбершопа</h2>
+        <b class="stats__slogan">Стрижка у нас<br> это выгодно!</b>
+        <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+        <small class="stats__legend stats__legend--top"><sup>*</sup> - приведеннные данные ложь</small>
+      </header>
+
+      <table class="stats__items">
+        <tr>
+          <td class="stats__value">1 500 <sup>*</sup></td>
+          <td class="stats__field">рублей<br> вложений</td>
+        </tr>
+        <tr>
+          <td class="stats__value">7 200</td>
+          <td class="stats__field">секунд<br> времени мастера</td>
+        </tr>
+        <tr>
+          <td class="stats__value">90 000</td>
+          <td class="stats__field">постриженных<br> волос</td>
+        </tr>
+        <tr>
+          <td class="stats__value">500 000 <sup>*</sup></td>
+          <td class="stats__field">лайков<br> и комплиментов</td>
+        </tr>
+      </table>
+      <small class="stats__legend stats__legend--bottom"><sup>*</sup> - приведеннные данные ложь</small>
     </div>
-  </nav>
-</header>
-<section class="stats">
-  <div class="stats__wrapper  container">
-    <header class="stats__header">
-      <h2 class="stats__title  visually-hidden">Статистика барбершопа</h2>
-      <b class="stats__slogan">Стрижка у нас<br> это выгодно!</b>
-      <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-      <small class="stats__legend stats__legend--top"><sup>*</sup> - приведеннные данные ложь</small>
-    </header>
+  </section>
 
-    <table class="stats__items">
-      <tr>
-        <td class="stats__value">1 500 <sup>*</sup></td>
-        <td class="stats__field">рублей<br> вложений</td>
-      </tr>
-      <tr>
-        <td class="stats__value">7 200</td>
-        <td class="stats__field">секунд<br> времени мастера</td>
-      </tr>
-      <tr>
-        <td class="stats__value">90 000</td>
-        <td class="stats__field">постриженных<br> волос</td>
-      </tr>
-      <tr>
-        <td class="stats__value">500 000 <sup>*</sup></td>
-        <td class="stats__field">лайков<br> и комплиментов</td>
-      </tr>
-    </table>
-    <small class="stats__legend stats__legend--bottom"><sup>*</sup> - приведеннные данные ложь</small>
-  </div>
-</section>
-
-<section class="features container">
-  <div class="features__wrapper">
-    <div class="features__item">
-      <picture class="features__icon  features__icon--scissors"></picture>
-      <div class="features__item-wrapper">
-        <b class="features__title">быстро</b>
-        <p class="features__text">Мы делаем свою работу быстро!
-          Два часа пролетят незаметно
-          и вы - счастливый обладатель
-          стильной стрижки-минутки</p>
+  <section class="features">
+    <div class="features__wrapper  container">
+      <div class="features__item">
+        <picture class="features__icon  features__icon--scissors"></picture>
+        <div class="features__item-wrapper">
+          <b class="features__title">быстро</b>
+          <p class="features__text">Мы делаем свою работу быстро!
+            Два часа пролетят незаметно
+            и вы - счастливый обладатель
+            стильной стрижки-минутки</p>
+        </div>
+      </div>
+      <div class="features__item">
+        <picture class="features__icon  features__icon--sit"></picture>
+        <div class="features__item-wrapper">
+          <b class="features__title">круто</b>
+          <p class="features__text">Забудьте, как вы стриглись
+            раньше. Мы сделаем из вас
+            звезду футбола или кино.
+            Во всяком случае внешне.</p>
+        </div>
+      </div>
+      <div class="features__item">
+        <picture class="features__icon  features__icon--barb"></picture>
+        <div class="features__item-wrapper">
+          <b class="features__title">дорого</b>
+          <p class="features__text">Наши мастера - профессионалы
+            своего дела и не могут стоить
+            дешего. К тому же. разве цена
+            не дает определенный статус?</p>
+        </div>
       </div>
     </div>
-    <div class="features__item">
-      <picture class="features__icon  features__icon--sit"></picture>
-      <div class="features__item-wrapper">
-        <b class="features__title">круто</b>
-        <p class="features__text">Забудьте, как вы стриглись
-          раньше. Мы сделаем из вас
-          звезду футбола или кино.
-          Во всяком случае внешне.</p>
+    <picture class="features__geometry"></picture>
+  </section>
+  <section class="news">
+    <div class="news__wrapper  container">
+      <h2 class="news__title">новости и акции</h2>
+      <div class="news__items">
+        <div class="news__item">
+          <div class="news__date-wrapper">
+            <div class="news__date">29</div>
+            <div class="news__month">сент</div>
+          </div>
+          <div class="news__text">Нам наконец завезли
+          Ягермайстер! Теперь вы можете
+          пропустить стаканчик во время
+          стрижки.</div>
+        </div>
+        <div class="news__item">
+          <div class="news__date-wrapper">
+            <div class="news__date">19</div>
+            <div class="news__month">сент</div>
+          </div>
+          <div class="news__text">В нашей команде пополнение,
+          Борис «Бритва» Стригунец,
+          пополнил наши стройные ряды.
+          Спешите записаться!</div>
+        </div>
+        <div class="news__item">
+          <div class="news__date-wrapper">
+            <div class="news__date">9</div>
+            <div class="news__month">сент</div>
+          </div>
+          <div class="news__text">Все дорожает, а наши стрижки
+          нет! Как так? приходите, постригитесь и узнаете, в чем
+          зведь подвох!</div>
+        </div>
       </div>
+      <button class="news__button  btn">показать все</button>
     </div>
-    <div class="features__item">
-      <picture class="features__icon  features__icon--barb"></picture>
-      <div class="features__item-wrapper">
-        <b class="features__title">дорого</b>
-        <p class="features__text">Наши мастера - профессионалы
-          своего дела и не могут стоить
-          дешего. К тому же. разве цена
-          не дает определенный статус?</p>
-      </div>
-    </div>
-  </div>
-  <picture class="features__geometry"></picture>
-</section>
-<script src="js/main.js"></script>
-</body>
+  </section>
+  <script src="js/main.js"></script>
+  </body>
 </html>
