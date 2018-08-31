@@ -1,0 +1,75 @@
+.feedback {
+
+  display: none;
+
+  padding: 50px 0 50px 0;
+
+  background: #f8f5f2;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0 0 0 70px;
+
+    font-family: $Sans-Narrow_bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 15%;
+  }
+
+  &__slider-wrapper {
+    position: relative;
+
+    padding: 50px 0 0 0;
+    width: auto;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+  }
+
+  &__photo {
+    float: left;
+    width: 249px;
+    height: 160px;
+    background: url("../img/feedback-photo.png") no-repeat;
+  }
+
+  &__user-wrapper {
+    width: 65%;
+    min-height: 160px;
+    margin-left: 30%;
+    padding-left: 5%;
+
+    font-family: $Sans-Narrow_regular;
+    font-size: 20px;
+
+    color: #000000;
+    border: 1px solid #e5ddd5;
+  }
+
+  &__user-name {
+    padding: 40px 0 10px 0;
+    font-family: $Sans-Narrow_bold;
+    font-size: 24px;
+  }
+
+  &__user-text {
+
+    line-height: 27px;
+  }
+}

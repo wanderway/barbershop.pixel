@@ -2,6 +2,7 @@
   padding: 65px 0 0 0;
 
   background: #f8f5f2;
+  border-bottom: 1px solid #e5ddd5;
 
   &__wrapper {
     position: relative;
@@ -22,8 +23,6 @@
     padding: 65px 0 45px 0;
 
     font-family: $Sans-Narrow_regular;
-
-    border-bottom: 1px solid #e5ddd5;
   }
 
   &__item {
