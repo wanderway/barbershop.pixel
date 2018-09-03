@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Фотогалерея «Бородинский»</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="visually-hidden  closed">Барбершоп «Бородинский» - истинно мужская классика</h1>
+      <picture class="page-header__logo  page-header__logo--photo-page">
+        <source media="(min-width: 320px) and (max-width: 768px)" srcset="img/logotype-mobile.svg">
+        <source media="(min-width: 768px) and (max-width: 1024px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-desktop.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+      </picture>
+
+      <nav class="main-nav  main-nav--closed  main-nav--nojs  container">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="#">Наши работы</a></li>
+            <li class="main-nav__item"><a href="#">Записаться</a></li>
+            <li class="main-nav__item"><a href="#">Контакты</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+
+          <ul class="main-nav__user-items">
+            <li class="main-nav__user-item">
+              <a href="#" class="main-nav__user-login" title="Войти">Вход</a></li>
+          </ul>
+        </div>
+      </nav>
+      <picture class="page-header__geometry"></picture>
+    </header>
+    <section class="photo-block">
+      <div class="photo-block__wrapper  container">
+        <h1 class="photo-block__title">наши работы</h1>
+        <div class="photo-block__main-photo">
+          <span class="photo-block__high-rated">работа месяца</span>
+          <div class="photo-block__image  photo-block__image--petr"></div>
+          <div class="photo-block__main-item-wrapper">
+            <span class="photo-block__person">Лжепётр Мчиславский</span>
+            <p class="photo-block__text">Где я только не стигся, но так как делаете
+            это вы - не умеет никто другой! Еще раз
+            спасибо и до скорого!</p>
+
+            <div class="photo-block__services  photo-block__services--no-margin-left">
+              <span class="photo-block__haircut">стрижка</span>
+              <span class="photo-block__shave">бритье</span>
+              <span class="photo-block__mustache">усы</span>
+            </div>
+          </div>
+        </div>
+        <div class="photo-block__items">
+          <div class="photo-block__item">
+            <div class="photo-block__image  photo-block__image--sasha"></div>
+            <div class="photo-block__item-wrapper">
+              <span class="photo-block__person">Саша Мальцев</span>
+              <p class="photo-block__text">Попросил омолодить и омолодили!
+              Кто теперь скажет, что мне 45?</p>
+            </div>
+            <div class="photo-block__services">
+              <span class="photo-block__haircut">стрижка</span>
+            </div>
+          </div>
+          <div class="photo-block__item">
+            <div class="photo-block__image  photo-block__image--vladimir"></div>
+            <div class="photo-block__item-wrapper">
+              <span class="photo-block__person">Владимир Иваныч</span>
+              <p class="photo-block__text">К зимнему сезону - готов!</p>
+            </div>
+            <div class="photo-block__services">
+              <span class="photo-block__shave">борода</span>
+              <span class="photo-block__mustache">усы</span>
+            </div>
+          </div>
+          <div class="photo-block__item">
+            <div class="photo-block__image  photo-block__image--winston"></div>
+            <div class="photo-block__item-wrapper">
+              <span class="photo-block__person">Винстон Синий</span>
+              <p class="photo-block__text">Как только заростаю и волосы
+              начинают мешать видеть - бегом
+              в Бородинский!</p>
+            </div>
+            <div class="photo-block__services">
+              <span class="photo-block__haircut">стрижка</span>
+            </div>
+          </div>
+        </div>
+        <a class="photo-block__button  btn">на главную</a>
+      </div>
+    </section>
+  </body>
+</html>
