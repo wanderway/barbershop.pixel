@@ -1,0 +1,197 @@
+.price-block {
+  padding: 80px 0;
+
+  background: #353535;
+
+  &__wrapper {
+    color: #ffffff;
+  }
+
+  &__title {
+    margin: 0 0 55px 0;
+    font: 40px $Sans-Narrow_bold;
+    text-transform: uppercase;
+  }
+
+  &__table-wrapper {
+    display: flex;
+    font: 20px $Sans-Narrow_regular;
+  }
+
+  &__table {
+    width: 65%;
+    margin: 0 5% 0 0;
+    line-height: 27px;
+
+    border-collapse: collapse;
+
+    td {
+      padding: 16.5px 0 16.5px 3%;
+      border: 1px solid #4a4a4a;
+    }
+  }
+
+  &__mobile-version-service {
+    display: none;
+  }
+
+  &__table-number {
+    width: 8%;
+    opacity: .5;
+  }
+
+  &__table-service {
+    font-family: $Sans-Narrow_bold;
+    width: 42%;
+  }
+
+  &__table-additional-service {
+    width: 25%;
+  }
+
+  &__table-price {
+    width: 25%;
+  }
+
+  &__sale-time {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 35px 0 25px 0;
+    line-height: 27px;
+
+    border: 1px solid #4a4a4a;
+  }
+
+  &__clock-image {
+    width: 142px;
+    height: 139px;
+    margin: 0 auto;
+
+    background: url("../img/price-block-clock.png");
+  }
+
+  &__text {
+    width: 50%;
+    margin: auto auto 0;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .price-block {
+
+    &__table-wrapper {
+      flex-direction: column;
+    }
+
+    &__table {
+      width: auto;
+      margin: 0 0 20px 0;
+    }
+
+    &__sale-time {
+      width: auto;
+      flex-direction: row;
+      padding: 20px 0 20px 35px;
+    }
+
+    &__clock-image {
+      width: 71px;
+      height: 71px;
+      margin: 0;
+
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &__text {
+      margin: auto;
+      text-transform: uppercase;
+      font-family: $Sans-Narrow_bold;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+  .price-block {
+    padding: 35px 0 75px 0;
+
+    background: #353535 url("../img/price-block-geometry.png") no-repeat bottom ;
+
+    &__wrapper {
+      width: 84%;
+    }
+
+    &__title {
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
+    &__table-wrapper {
+      flex-direction: column;
+    }
+
+    &__table {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+
+      td {
+        padding-left: 0;
+
+        border: none;
+      }
+    }
+
+    &__table-number {
+      display: none;
+    }
+
+    &__table-service {
+      display: none;
+    }
+
+    &__table-additional-service {
+      display: none;
+    }
+
+    &__mobile-version-service {
+      width: 90%;
+      display: block;
+    }
+
+    &__mobile-version-main-service {
+      display: block;
+
+      font-family: $Sans-Narrow_bold;
+    }
+
+    &__table-price {
+      width: auto;
+      text-align: center;
+    }
+
+    &__sale-time {
+      width: auto;
+      flex-direction: row;
+      padding: 15px 0 15px 20px;
+    }
+
+    &__clock-image {
+      width: 71px;
+      height: 71px;
+      margin: 0;
+
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    &__text {
+      margin: auto;
+      text-align: left;
+    }
+  }
+}

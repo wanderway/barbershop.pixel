@@ -193,7 +193,7 @@
   &__item-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 35px 0 0 35px;
+    padding: 35px 5% 0 10%;
   }
 
 
@@ -230,6 +230,8 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .photo-block {
+
+    background: #f8f5f2 url("../img/photo-block-geometry.png") no-repeat bottom ;
 
     &__high-rated {
       right: 70%;
@@ -307,6 +309,8 @@
 
   .photo-block {
 
+    background: #f8f5f2 url("../img/photo-block-geometry.png") no-repeat bottom ;
+
     &__title {
       text-align: center;
     }
@@ -350,7 +354,7 @@
 
     &__main-item-wrapper {
       width: auto;
-      padding: 25px 0 0 20px;
+      padding: 25px 0 0 7%;
 
       border: none;
 
@@ -371,7 +375,7 @@
     }
 
     &__services {
-      margin-left: 20px;
+      margin-left: 7%;
     }
 
     &__services--no-margin-left {
@@ -394,7 +398,7 @@
     }
 
     &__item-wrapper {
-      padding: 20px 0 0 20px;
+      padding: 20px 0 0 7%;
 
       p {
         margin: 10px 0 0 0;
