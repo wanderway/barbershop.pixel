@@ -28,6 +28,32 @@
   &__item {
     display: flex;
     width: calc(100% / 3);
+
+    text-decoration: none;
+    color: #000000;
+
+    transition: .4s;
+
+    &:hover .news__date-wrapper {
+      background: #826550;
+
+      box-shadow: 0 0 3px #886e5b;
+
+      transition: .5s;
+
+      &:after {
+        border-top-color: #826550;
+
+        transition: .5s;
+      }
+    }
+
+    &:hover .news__text {
+      color: #886e5b;
+
+      text-shadow: 0 0 1px #886e5b;
+      transition: .6s;
+    }
   }
 
   &__date-wrapper {
