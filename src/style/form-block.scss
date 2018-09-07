@@ -104,6 +104,7 @@
   &__model-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 
     font: 24px $Sans-Narrow_regular;
   }
@@ -181,5 +182,105 @@
   }
   &__model-image--sage {
     background-position: -342px -10px;
+  }
+
+  &__checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+    font: 24px $Sans-Narrow_regular;
+    line-height: 35px;
+  }
+
+  &__checkbox-items {
+    position: relative;
+
+    width: calc(100% / 3);
+    padding-left: 60px;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3){
+      margin-bottom: 45px;
+    }
+  }
+
+  &__checkbox-item {
+    display: none;
+  }
+
+  &__checkbox-item + &__checkbox-indicator {
+    position: absolute;
+    left: 0;
+
+    width: 35px;
+    height: 35px;
+
+    background: #f1f1f1;
+    border: 1px solid #d5c9bd;
+
+    transition: .5s;
+
+    &:hover {
+      border: 1px solid #6a4d38;
+
+      transition: .6s;
+
+    }
+  }
+
+  &__checkbox-item[type="checkbox"]:checked + &__checkbox-indicator::after {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+
+    width: 20px;
+    height: 2px;
+
+    background: #000000;
+
+    content: "";
+  }
+
+  &__checkbox-item + &__checkbox-indicator:after {
+    transform: rotate(-45deg);
+  }
+
+  &__checkbox-item[type="checkbox"]:checked + &__checkbox-indicator::before {
+    position: absolute;
+    top: 20px;
+    left: 4px;
+
+    width: 10px;
+    height: 2px;
+
+    background: #000000;
+
+    content: "";
+  }
+
+  &__checkbox-item + &__checkbox-indicator:before {
+    transform: rotate(45deg);
+  }
+
+  &__form-button {
+    width: 100%;
+    font: 24px $Sans-Narrow_bold;
+    text-transform: uppercase;
+    line-height: 70px;
+
+    color: #ffffff;
+    background: #826550;
+    border: none;
+    cursor: pointer;
+
+    transition: .4s;
+
+    &:hover {
+      background: #6a4d38;
+
+      transition: .5s;
+    }
   }
 }
