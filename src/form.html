@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Запись на стрижку «Бородинский»</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+  <header class="page-header">
+    <h1 class="visually-hidden  closed">Барбершоп «Бородинский» - истинно мужская классика</h1>
+    <picture class="page-header__logo  page-header__logo--secondary-page">
+      <source media="(min-width: 320px) and (max-width: 768px)" srcset="img/logotype-mobile.svg">
+      <source media="(min-width: 768px) and (max-width: 1024px)" srcset="img/logotype-tablet.svg">
+      <img src="img/logotype-desktop.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+    </picture>
+
+    <nav class="main-nav  main-nav--closed  main-nav--nojs  container">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="#">работы</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="#">Записаться</a></li>
+          <li class="main-nav__item"><a href="#">Контакты</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item">
+            <a href="#" class="main-nav__user-login" title="Войти">Вход</a></li>
+        </ul>
+      </div>
+    </nav>
+    <picture class="page-header__geometry"></picture>
+  </header>
+  <section class="form-block">
+    <div class="form-block__wrapper  container">
+      <h2 class="form-block__title  ttl">запись на стрижку</h2>
+      <form class="form-block__form">
+        <div class="form-block__contact-wrapper">
+          <input class="form-block__contact-first-name" type="text" name="first-name" placeholder="Имя" id="contact-first-name">
+          <input class="form-block__contact-second-name" type="text" name="second-name" placeholder="Фамилия" id="contact-second-name">
+          <input class="form-block__contact-patronymic" type="text" name="patronymic" placeholder="Отчество" id="contact-patronymic">
+          <input class="form-block__contact-phone" type="text" name="phone" placeholder="Контактный телефон" id="contact-phone">
+          <input class="form-block__contact-email" type="text" name="email" placeholder="Контактный e-mail" id="contact-email">
+          <textarea class="form-block__contact-info" name="text" cols="50" rows="3" placeholder="Доп. информация для мастера"></textarea>
+        </div>
+        <span class="form-block__service-choice-title">выберите модель бороды:</span>
+        <div class="form-block__model-wrapper">
+          <label class="form-block__radio-items" for="admiral">
+            <input class="form-block__radio-item" type="radio" name="admiral" id="admiral" checked>
+            <span class="form-block__radio-indicator"></span>
+            <span class="form-block__model-title">адмирал</span>
+            <span class="form-block__model-image  form-block__model-image--admiral"></span>
+          </label>
+          <label class="form-block__radio-items" for="axeman">
+            <input class="form-block__radio-item" type="radio" name="axeman" id="axeman">
+            <span class="form-block__radio-indicator"></span>
+            <span class="form-block__model-title">лесоруб</span>
+            <span class="form-block__model-image  form-block__model-image--axeman"></span>
+          </label>
+          <label class="form-block__radio-items" for="polar">
+            <input class="form-block__radio-item" type="radio" name="polar" id="polar">
+            <span class="form-block__radio-indicator"></span>
+            <span class="form-block__model-title">полярник</span>
+            <span class="form-block__model-image  form-block__model-image--polar"></span>
+          </label>
+          <label class="form-block__radio-items" for="boyar">
+            <input class="form-block__radio-item" type="radio" name="boyar" id="boyar">
+            <span class="form-block__radio-indicator"></span>
+            <span class="form-block__model-title">боярин</span>
+            <span class="form-block__model-image  form-block__model-image--boyar"></span>
+          </label>
+          <label class="form-block__radio-items" for="sage">
+            <input class="form-block__radio-item" type="radio" name="sage" id="sage">
+            <span class="form-block__radio-indicator"></span>
+            <span class="form-block__model-title">мудрец</span>
+            <span class="form-block__model-image  form-block__model-image--sage"></span>
+          </label>
+        </div>
+      </form>
+      <a class="form-block__button  btn" href="#">на главную</a>
+    </div>
+  </section>
+  <!--<footer class="footer">-->
+    <!--<div class="footer__wrapper  container">-->
+      <!--<section class="footer__item  footer__item&#45;&#45;contact">-->
+        <!--<div class="footer__title">барбершоп бородинский</div>-->
+        <!--<a class="footer__address"  href="#">г.Санкт-Петербург, ул. Большая<br> Конюшенная 19/8</a>-->
+        <!--<a class="footer__phone" href="tel:+78126660266">Телефон: +7 (812) 666-02-66</a>-->
+      <!--</section>-->
+      <!--<section class="footer__item  footer__item&#45;&#45;social">-->
+        <!--<p>Давайте дружить!</p>-->
+        <!--<a class="footer__social-btn footer__social-btn&#45;&#45;vk" href="#">Вконтакте</a>-->
+        <!--<a class="footer__social-btn footer__social-btn&#45;&#45;fb" href="#">Фейсбук</a>-->
+        <!--<a class="footer__social-btn footer__social-btn&#45;&#45;inst" href="#">Инстаграм</a>-->
+      <!--</section>-->
+      <!--<section class="footer__item  footer__item&#45;&#45;copyright">-->
+        <!--<p>Разработано:</p>-->
+        <!--<a class="footer__button  btn" href="https://htmlacademy.ru">HTML Academy</a>-->
+      <!--</section>-->
+    <!--</div>-->
+  <!--</footer>-->
+  <script src="js/main.js"></script>
+  </body>
+</html>

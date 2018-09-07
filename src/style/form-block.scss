@@ -1,0 +1,185 @@
+.form-block {
+  padding: 60px 0 90px 0;
+
+  background: #f8f5f2;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    line-height: 50px;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 15%;
+  }
+
+  &__contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    input[type="text"],
+    textarea {
+      padding-left: 2%;
+
+      font: 24px $Sans-Narrow_regular;
+      line-height: 70px;
+
+      color: #000000;
+      border: 1px solid #e5ddd5;
+
+      &:hover {
+        border: 1px solid #d5c9bd;
+        box-shadow: 0 0 1px #d5c9bd;
+      }
+    }
+  }
+
+  &__contact-first-name {
+    width: 31%;
+  }
+
+  &__contact-second-name {
+    width: 31%;
+  }
+
+  &__contact-patronymic {
+    width: 31%;
+  }
+
+  &__contact-phone {
+    width: 48%;
+    margin-top: 35px;
+  }
+
+  &__contact-email {
+    width: 48%;
+    margin-top: 35px;
+  }
+
+  &__contact-info {
+    width: 100%;
+    margin: 35px 0 70px 0;
+  }
+
+  &__service-choice-title {
+    display: block;
+    margin-bottom: 50px;
+
+    font: 30px $Sans-Narrow_regular;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+
+    &:before,
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 1px;
+      background: #e5ddd5;
+      border: solid #f8f5f2;
+      border-width: 0 40px;
+      margin-bottom: 5px;
+    }
+
+    &:before {
+      margin-left: -100%;
+    }
+    &:after {
+      margin-right: -100%;
+    }
+  }
+
+  &__model-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    font: 24px $Sans-Narrow_regular;
+  }
+
+  &__radio-items {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  &__radio-item {
+    display: none;
+  }
+
+  &__model-title {
+    padding: 75px 0 30px 0;
+  }
+
+  &__radio-item + &__radio-indicator {
+    position: absolute;
+    left: calc(50% - 28px);
+    top: 0;
+
+    width: 55px;
+    height: 55px;
+
+    background: #ffffff;
+    border-radius: 30px;
+    border: 1px solid #e6ded6;
+
+    transition: .5s;
+
+    &:hover {
+      border: 2px solid #63d1bb;
+
+      transition: .6s;
+    }
+  }
+
+  &__radio-item[type="radio"]:checked + &__radio-indicator::after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 15px;
+    border: 1px solid #e6ded6;
+
+    content: "";
+  }
+
+  &__model-image {
+    display: block;
+
+    height: 104px;
+    width: 63px;
+
+    background: url("../img/beards-sprite.png") -10px -40px;
+  }
+
+  &__model-image--axeman {
+    background-position: -93px -25px;
+  }
+  &__model-image--polar {
+    background-position: -176px -20px;
+  }
+
+  &__model-image--boyar {
+    background-position: -259px -10px;
+  }
+  &__model-image--sage {
+    background-position: -342px -10px;
+  }
+}

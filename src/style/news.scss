@@ -9,13 +9,7 @@
   }
 
   &__title {
-    margin: 0;
     padding: 0 0 0 70px;
-
-    font-family: $Sans-Narrow_bold;
-    font-size: 40px;
-    text-transform: uppercase;
-    line-height: 30px;
   }
 
   &__items {
@@ -137,13 +131,6 @@
       padding: 30px 0 130px 0;
       flex-direction: column;
       justify-content: space-between;
-    }
-
-    &__title {
-      padding: 0;
-
-      font-size: 30px;
-      text-align: center;
     }
 
     &__item {

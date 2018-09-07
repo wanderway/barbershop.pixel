@@ -64,5 +64,20 @@ body {
   overflow: hidden;
 }
 
+.ttl {
+  margin: 0;
+
+  font: 40px $Sans-Narrow_bold;
+  text-transform: uppercase;
+  line-height: 30px;
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    padding: 0;
+
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
 
 

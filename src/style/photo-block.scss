@@ -10,10 +10,7 @@
   &__title {
     margin: 0 0 60px 0;
 
-    font-size: 40px;
-    line-height: 45px;
-    text-transform: uppercase;
-    font-family: $Sans-Narrow_bold;
+    line-height: 50px;
   }
 
   &__button {
@@ -283,7 +280,6 @@
       flex-direction: row;
       height: auto;
       flex-wrap: wrap;
-
     }
 
     &__image {
@@ -308,11 +304,11 @@
 @media (min-width: 320px) and (max-width: 768px) {
 
   .photo-block {
-
+    padding: 15px 0 80px 0;
     background: #f8f5f2 url("../img/photo-block-geometry.png") no-repeat bottom ;
 
     &__title {
-      text-align: center;
+      margin: 0 0 15px 0;
     }
 
     &__button {
@@ -365,6 +361,7 @@
     }
 
     &__items {
+      padding-bottom: 0;
       flex-direction: column;
     }
 
@@ -372,6 +369,10 @@
       width: auto;
       height: 390px;
       margin: 0 0 40px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &__services {
