@@ -141,7 +141,7 @@
     transition: .5s;
 
     &:hover {
-      border: 2px solid #63d1bb;
+      border: 1px solid #63d1bb;
 
       transition: .6s;
     }
@@ -281,6 +281,43 @@
       background: #6a4d38;
 
       transition: .5s;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-block {
+
+    &__button {
+      width: 25%;
+    }
+
+    &__contact-first-name {
+      width: calc(100% / 3);
+      border-right: none !important;
+    }
+
+    &__contact-second-name {
+      width: calc(100% / 3);
+      border-right: none !important;
+    }
+
+    &__contact-patronymic {
+      width: calc(100% / 3);
+    }
+
+    &__contact-phone {
+      width: 100%;
+      margin-top: 35px;
+    }
+
+    &__contact-email {
+      width: 100%;
+      margin-top: 35px;
+    }
+
+    &__checkbox-items {
+      width: 50%;
     }
   }
 }
