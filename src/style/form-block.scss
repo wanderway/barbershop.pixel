@@ -25,47 +25,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
 
-    input[type="text"],
-    textarea {
-      padding-left: 2%;
+  &__input-text,
+  &__input-textarea {
+    padding-left: 2%;
 
-      font: 24px $Sans-Narrow_regular;
-      line-height: 70px;
+    font: 24px $Sans-Narrow_regular;
+    line-height: 70px;
 
-      color: #000000;
-      border: 1px solid #e5ddd5;
+    color: #000000;
+    border: 1px solid #e5ddd5;
 
-      &:hover {
-        border: 1px solid #d5c9bd;
-        box-shadow: 0 0 1px #d5c9bd;
-      }
+    &:hover {
+      border: 1px solid #d5c9bd;
+      box-shadow: 0 0 1px #d5c9bd;
     }
   }
 
-  &__contact-first-name {
+  &__input-text--full-name {
     width: 31%;
   }
 
-  &__contact-second-name {
-    width: 31%;
-  }
-
-  &__contact-patronymic {
-    width: 31%;
-  }
-
-  &__contact-phone {
+  &__input-text--contacts {
     width: 48%;
     margin-top: 35px;
   }
 
-  &__contact-email {
-    width: 48%;
-    margin-top: 35px;
-  }
-
-  &__contact-info {
+  &__input-textarea {
     width: 100%;
     margin: 35px 0 70px 0;
   }
@@ -285,7 +272,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .form-block {
 
     &__button {
@@ -322,7 +309,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .form-block {
     padding: 30px 0 80px 0;
 
@@ -340,44 +327,35 @@
       margin-bottom: 30px;
     }
 
-    &__contact-wrapper {
+    &__input-text,
+    &__input-textarea {
+      font: 18px $Sans-Narrow_regular;
+      line-height: 50px;
 
+      padding-left: 5%;
+    }
 
+    &__input-text--full-name {
+      width: 100%;
+      margin-bottom: 10px;
 
-      input[type="text"],
-      textarea {
-        font: 18px $Sans-Narrow_regular;
-        line-height: 50px;
-
-        padding-left: 5%;
+      &:last-child {
+        margin-bottom: 0;
       }
     }
 
-    &__contact-first-name {
+    &__input-text--contacts {
       width: 100%;
-      margin-bottom: 10px;
+      margin:  0 0 10px 0;
     }
 
-    &__contact-second-name {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
-    &__contact-patronymic {
-      width: 100%;
-    }
-
-    &__contact-phone {
-      width: 100%;
-    }
-
-    &__contact-email {
-      margin-top: 10px;
-      width: 100%;
-    }
-
-    &__contact-info {
+    &__input-text--margin {
       margin-bottom: 30px;
+    }
+
+
+    &__input-textarea {
+      margin: 20px auto 30px;
     }
 
     &__service-choice-title {

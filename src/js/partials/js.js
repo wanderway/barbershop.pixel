@@ -20,7 +20,7 @@ navToggle.addEventListener('click', function () {
             settings: 'unslick',
             responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 769,
                     settings: {
                         dots: true,
                         arrows: false,

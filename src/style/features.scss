@@ -1,5 +1,5 @@
 .features {
-  background: #242424 url("../img/features-geometry.png") no-repeat bottom center;
+  background: #242424;
 
   &__wrapper {
     display: flex;
@@ -57,7 +57,8 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+
   .features {
     padding-bottom: 50px;
 
@@ -102,7 +103,8 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
+
   .features {
     padding: 20px 0 40px 0;
     display: block;
@@ -123,8 +125,10 @@
       margin: 0;
     }
 
+
     &__icon {
       display: inline-block;
+      margin: 0 auto;
     }
   }
 

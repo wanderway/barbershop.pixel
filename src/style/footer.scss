@@ -105,7 +105,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .footer {
 
     &__wrapper {
@@ -147,7 +147,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .footer {
 
     &__wrapper {
@@ -171,11 +171,15 @@
 
     &__phone {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
 
       line-height: 50px;
 
       border: 1px solid #3f3f3f;
+
+      &:hover {
+        border-color: #515151;
+      }
     }
 
 

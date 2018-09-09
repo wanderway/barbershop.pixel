@@ -10,8 +10,8 @@
   <header class="page-header">
     <h1 class="visually-hidden  closed">Барбершоп «Бородинский» - истинно мужская классика</h1>
     <picture class="page-header__logo  page-header__logo--secondary-page">
-      <source media="(min-width: 320px) and (max-width: 768px)" srcset="img/logotype-mobile.svg">
-      <source media="(min-width: 768px) and (max-width: 1024px)" srcset="img/logotype-tablet.svg">
+      <source media="(max-width: 768px)" srcset="img/logotype-mobile.svg">
+      <source media="(min-width: 769px) and (max-width: 1024px)" srcset="img/logotype-tablet.svg">
       <img src="img/logotype-desktop.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
     </picture>
 
@@ -33,19 +33,18 @@
         </ul>
       </div>
     </nav>
-    <picture class="page-header__geometry"></picture>
   </header>
   <section class="form-block">
     <div class="form-block__wrapper  container">
       <h2 class="form-block__title  ttl">запись на стрижку</h2>
       <form class="form-block__form">
         <div class="form-block__contact-wrapper">
-          <input class="form-block__contact-first-name" type="text" name="first-name" placeholder="Имя" id="contact-first-name">
-          <input class="form-block__contact-second-name" type="text" name="second-name" placeholder="Фамилия" id="contact-second-name">
-          <input class="form-block__contact-patronymic" type="text" name="patronymic" placeholder="Отчество" id="contact-patronymic">
-          <input class="form-block__contact-phone" type="text" name="phone" placeholder="Контактный телефон" id="contact-phone">
-          <input class="form-block__contact-email" type="text" name="email" placeholder="Контактный e-mail" id="contact-email">
-          <textarea class="form-block__contact-info" name="text" cols="50" rows="3" placeholder="Доп. информация для мастера"></textarea>
+          <input class="form-block__input-text  form-block__input-text--full-name" type="text" name="first-name" placeholder="Имя" id="contact-first-name">
+          <input class="form-block__input-text  form-block__input-text--full-name" type="text" name="second-name" placeholder="Фамилия" id="contact-second-name">
+          <input class="form-block__input-text  form-block__input-text--full-name  form-block__input-text--margin" type="text" name="patronymic" placeholder="Отчество" id="contact-patronymic">
+          <input class="form-block__input-text  form-block__input-text--contacts" type="text" name="phone" placeholder="Контактный телефон" id="contact-phone">
+          <input class="form-block__input-text  form-block__input-text--contacts" type="text" name="email" placeholder="Контактный e-mail" id="contact-email">
+          <textarea class="form-block__input-textarea  form-block__contact-info" name="text" cols="50" rows="3" placeholder="Доп. информация для мастера"></textarea>
         </div>
         <span class="form-block__service-choice-title">выберите модель бороды:</span>
         <div class="form-block__model-wrapper">
