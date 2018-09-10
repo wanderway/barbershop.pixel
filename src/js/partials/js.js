@@ -32,21 +32,16 @@ navToggle.addEventListener('click', function () {
     }
 })();
 
-(function () {
-
-    if (window.matchMedia("(max-width: 1500px)").matches) {
-        $('.feedback__slider-wrapper').slick({
-            settings: 'unslick',
-            responsive: [
-                {
-                    breakpoint: 1500,
-                    settings: {
-                        dots: true,
-                        arrows: false,
-                        autoplay: true
-                    }
-                }
-            ]
-        });
-    }
-})();
+$('.feedback__slider-wrapper').slick({
+    settings: 'unslick',
+    responsive: [
+        {
+            breakpoint: 5000,
+            settings: {
+                dots: true,
+                arrows: true,
+                autoplay: false
+            }
+        }
+    ]
+});

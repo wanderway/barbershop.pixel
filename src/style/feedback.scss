@@ -1,7 +1,5 @@
 .feedback {
 
-  display: none;
-
   padding: 50px 0 50px 0;
 
   background: #f8f5f2;
@@ -31,28 +29,29 @@
   &__slider-wrapper {
     position: relative;
 
-    padding: 50px 0 0 0;
+    padding: 50px 0 30px;
     width: auto;
     overflow: hidden;
   }
 
   &__item {
     display: inline-block;
-    width: 100%;
-    margin: 0;
+
   }
 
   &__photo {
     float: left;
-    width: 249px;
+    width: 25%;
     height: 160px;
-    background: url("../img/feedback-photo.png") no-repeat;
+    margin-left: 7.5%;
+
+    background: url("../img/feedback-photo.png") no-repeat right;
   }
 
   &__user-wrapper {
-    width: 65%;
+    float: left;
+    width: 60%;
     min-height: 160px;
-    margin-left: 30%;
     padding-left: 5%;
 
     font-family: $Sans-Narrow_regular;
@@ -60,6 +59,7 @@
 
     color: #000000;
     border: 1px solid #e5ddd5;
+    border-left: none;
   }
 
   &__user-name {
@@ -71,4 +71,177 @@
   &__user-text {
     line-height: 27px;
   }
+
+  .slick-prev {
+    position: absolute;
+    left: 0;
+
+    z-index: 10;
+
+    &:after {
+      position: absolute;
+      top: calc(50% - 5px);
+      left: calc(50% - 6px);
+
+      background: #000000;
+      border-top: 8px solid #f8f5f2;
+      border-right: 10px solid #000000;
+      border-bottom: 8px solid #f8f5f2;;
+
+      content: "";
+    }
+  }
+
+  .slick-next {
+    position: absolute;
+
+    right: 0;
+
+    &:after {
+      position: absolute;
+      top: calc(50% - 5px);
+      right: calc(50% - 6px);
+
+      background: #000000;
+      border-top: 8px solid #f8f5f2;
+      border-left: 10px solid #000000;
+      border-bottom: 8px solid #f8f5f2;
+
+      content: "";
+    }
+  }
+
+  .slick-arrow {
+    width: 5%;
+    height: 160px;
+
+    top: 50px;
+
+    text-indent: -10000px;
+    background: #f8f5f2;
+    border: 1px solid #e5ddd5;
+  }
+
+  .slick-dots {
+    position: absolute;
+    padding: 0;
+    bottom: 2px;
+    left: calc(50% - 32px);
+
+    li {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin-left: 20px;
+
+      border: 1px solid #000000;
+      transform: rotate(45deg);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      button {
+        display: none;
+      }
+    }
+
+    li.slick-active {
+      background: #000000;
+    }
+  }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .feedback {
+    &__button {
+      width: 25%;
+    }
+    .slick-arrow {
+      width: 7.5%;
+    }
+
+    &__item {
+    }
+
+    &__photo {
+      width: 20%;
+      background: url("../img/feddback-photo-tablet.png") no-repeat center center;
+      border-top: 1px solid #e5ddd5;
+      border-bottom: 1px solid #e5ddd5;
+    }
+
+    &__user-wrapper {
+      width: 65%;
+      padding-left: 0;
+      font-size: 18px;
+
+      border-right: none;
+    }
+
+    &__user-name {
+      padding: 35px 0 0 0;
+    }
+
+    &__user-text {
+      width: 90%;
+    }
+
+    .slick-dots {
+      bottom: 27px;
+      left: calc(50% - 62px);
+
+      background: #f8f5f2;
+      border-right: 30px solid transparent;
+      border-left: 30px solid transparent;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .feedback {
+    padding: 25px 0;
+    &__button {
+      display: none;
+    }
+
+    &__title {
+      padding: 0;
+      font-size: 30px;
+    }
+
+    &__slider-wrapper {
+      padding: 30px 0 30px 0;
+    }
+
+    .slick-arrow {
+      display: none!important;
+    }
+
+    &__user-wrapper {
+      width: 65%;
+      padding-left: 15px;
+      border: none;
+    }
+
+    &__photo {
+      width: 25%;
+      margin-left: 5%;
+      background: url("../img/feddback-photo-tablet.png") no-repeat center top;
+    }
+
+    &__user-text {
+      font-size: 18px;
+    }
+
+    &__user-name {
+      padding-top: 0;
+    }
+  }
+
+}
+
+
+
